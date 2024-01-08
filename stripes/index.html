@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripes Academy</title><LINK REL="SHORTCUT ICON"  HREF="assets/images/StripesLogo.svg">
+      <meta name="author" content="A Maria Tellas Bsc.,MCA">
+
+    <!--Add Bootstrap css-->
+    
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-reboot.css">
+      <!--The facuty swiper css-->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      #la {
+        margin: 0;
+        overflow: hidden;
+        background-color: aqua;
+      }
+    
+      #logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: logoAnimation 4s ease-in-out forwards; /* Change the duration to 4.1s */
+      }
+    
+      @keyframes logoAnimation {
+        0% {
+          transform: translate(-50%, -50%) scale(2);
+          opacity: 1;
+        }
+        50% {
+          transform: translate(-110%, -200%) scale(1.1.7);
+          opacity: 1;
+        }
+        71%{
+            transform: translate(-128.6%, -220.8%) scale(0.8);
+            opacity: 1;
+            display: none;
+        }
+        71.1%{
+            transform: translate(0%, 0%) scale(0);
+            opacity: 0;
+            display: none;
+        }
+        80%{
+            transform: translate(0%, 0%) scale(0);
+            opacity: 0;
+            display: none;
+        }
+       100% {
+          transform: translate(0%, 0%) scale(0);
+          opacity: 0;
+          display: none; /* Hide the image at the end of the animation */
+        }
+      }
+    
+      .navbar {
+        display: none;
+      }
+    
+      @media screen and (max-width: 988px) {
+        #la {
+          display: none;
+        }
+        .navbar{
+            display: grid;
+        }
+      }
+    </style>
+</head>
+<body>
+    <!--Navbar start-->
+    <script>
+      // Wait for the document to be fully loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        // Delay the display of the navbar by 4.1 seconds (4100 milliseconds)
+        setTimeout(function () {
+          // Get the navbar element
+          var navbar = document.getElementById("navbar");
+          // Change the display style to grid
+          navbar.style.display = "grid";
+        }, 2830.4); // 4.1 seconds delay
+      });
+    </script>
+    
+    <nav class="navbar navbar-expand-lg fixed-top"id="navbar" 
+    style ="justify-content: center;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="assets/images/StripesLogo.svg" height="200px" width="200px" alt="" class="img-fluid"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Stripes Academy</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2 active" aria-current="page" href="index.php"style="font-weight: 700">Home</a>
+               
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"style="color: #171616;font-weight: 700">
+                    About Stripes
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="about.php">About</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                
+                  <li class="nav-item">
+                    <a class="nav-link mx-lg-2"  href="#"style="color: #171616;font-weight: 700">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-lg-2"  href="gallery.php"style="color: #171616;font-weight: 700">Gallery</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #171616;font-weight: 700;">
+                      Courses
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Navigate Safely with Stripes</a></li>
+                      <li><a class="dropdown-item" href="#">Safe Cargo & Machinery Operations through Stripes</a></li>
+                      <li></li>
+                      <li><a class="dropdown-item" href="#">Safety & Wellness Training at Stripes</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="#"style="color: #171616;font-weight: 700">Services</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"style="color: #171616;font-weight: 700">
+                      Tools
+
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                 
+               
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+    </script>
+    
+      
+    
+      <script>
+      window.addEventListener("scroll", function () {
+    var navbar = document.querySelector(".navbar");
+    if (window.scrollY > 0) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
+
+      </script>
+      
+      <!--navbar end-->
+     <!--hero section start-->
+      
+      <div class="hero-section">
+        <video autoplay muted>
+            <source src="assets/images/Untitled design (1).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <!-- Your other content goes here -->
+            
+            <div id="la">
+              <div id="logo">
+                <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Your SVG logo content goes here -->
+                  <img src="assets/images/Stripes Logo.svg" style="height: 100px; width: 400px;display:grid;">
+                </svg>
+              </div>
+            
+              <script>
+                window.onload = function() {
+                  var logo = document.getElementById('logo');
+                  logo.style.animationPlayState = 'running';
+                }
+              </script>
+        </div>
+    </div>
+    </div>
+      <!--hero section end-->
+      <!---The Course card Section Start-->
+      <style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+        background-color: #e6e4e2;
+}
+.card-img-top{
+    border-radius: 50px;
+    padding: 20px;
+}
+.card{
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.card-body{
+    padding: 25px;
+    margin-top: -15px;
+}
+.btn-primary{
+    border-radius: 50px;
+    width: 120px;
+}
+.btn-primary:hover{
+    background-color: black;
+    border: none;
+}
+h3,h5{
+    color: rgb(0, 91, 228);
+}
+      </style>
+<div>
+      <div class="container py-5">
+        <h1 class="text-center">Popular Courses</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+
+            <div class="col">
+                <div class="card">
+                    <img src="assets/images/courses_1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <center> <h5 class="card-title">Navigate Safely with Stripes</h5></center> 
+                        
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+        
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="assets/images/courses_2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <center> <h5 class="card-title">Safe Cargo & Machinery Operations through Stripes</h5></center>
+                       
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+        
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                  <img src="assets/images/courses_3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <center> <h5 class="card-title">Safety & Wellness Training at Stripes</h5></center>
+                     
+                  </div>
+                  <div class="mb-5 d-flex justify-content-around">
+      
+                      <button class="btn btn-primary">Learn More</button>
+                  </div>
+              </div>
+          </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="assets/images/courses_3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Popular Courses</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                            dignissimos accusantium amet similique velit iste.</p>
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+        
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="assets/images/1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Popular Courses</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                            dignissimos accusantium amet similique velit iste.</p>
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+        
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="assets/images/1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Popular Courses</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                            dignissimos accusantium amet similique velit iste.</p>
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+        
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+           
+
+        </div>
+    </div></div>
+    <!---The Course card Section End-->
+  
+   <!--The swiper faculty card start-->
+
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="container1">
+      <div class="testimonial mySwiper">
+        <div class="testi-content swiper-wrapper">
+          <div class="slide swiper-slide">
+            <img src="assets/images/Untitled.jpeg" alt="" class="image" />
+            <p>
+              Principal/ Director at Stripes Academy.
+              Previously Vice Principal at Samundra Institute of Maritime Studies (a part of the Executive Group) where I worked for 9 years.
+              Author of "The ECDIS Blues - A practical guide to safe passage planning on ECDIS".
+              My career at sea spanning over 21 years has been mainly on crude oil and product tankers with the last 9 years being in command.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Capt.Vincent Fernandas</span>
+              <span class="job">Principal</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="data:image/jpeg;base64,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" alt="" class="image" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+              saepe provident dolorem a quaerat quo error facere nihil deleniti
+              eligendi ipsum adipisci, fugit, architecto amet asperiores
+              doloremque deserunt eum nemo.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Maria Tellas A</span>
+              <span class="job">Web Developer</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="assets/images/Untitled.jpeg" alt="" class="image" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+              saepe provident dolorem a quaerat quo error facere nihil deleniti
+              eligendi ipsum adipisci, fugit, architecto amet asperiores
+              doloremque deserunt eum nemo.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Marnie Lotter</span>
+              <span class="job">Web Developer</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+ 
+
+     <!--The Faculty End-->
+  </div>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  grabCursor: true,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+</script>
+
+
+   <!--the Swiper faculty card end-->
+      
+
+
+
+
+
+   
+      
+<!-- FOOTER -->
+
+<footer class="w-100 py-4 flex-shrink-0" style="background-color: black;">
+                
+  <div class="row gy-4 gx-5" style="width: 100%;">
+      <div class="col-lg-4 col-md-6">
+
+                <center>  <p style="color:#fff"><img src="AAC3_1.png" alt="">
+                      <br> St. Xavier's Campus
+                      <br> Shilpalaya, Vinayalaya
+                      <br> Mahakali Caves Road
+                      <br> Behind Holy Family Church
+                      <br> Mumbai 400 093, INDIA</p>
+                  <p><span id="span_1dd7_11">principal@aactni.edu.in</span>
+                      <br> <a id="mail" href="https://www.aactni.edu.in/arulanandarcollege@gmail.com">arulanandarcollege@gmail.com</a></p>
+         </center>`   
+          
+      </div>
+      <div class="col-lg-2 col-md-6">
+          <h5 class="text-white mb-3">Quick links</h5>
+          <ul class="list-unstyled text-muted">
+              <li class="menu-item"><a href="https://mkuniversity.ac.in/new/" target="_blank">MKU</a></li>
+                      <li class="menu-item"><a href="https://ugc.ac.in/" target="_blank">UGC</a></li>
+                      <li class="menu-item"><a href="http://www.naac.gov.in/" target="_blank">NAAC</a></li>
+                      <li class="menu-item"><a href="https://swayam.gov.in/" target="_blank">Swayam</a></li>
+                      <li class="menu-item"><a href="https://nptel.ac.in/" target="_blank">NPTEL</a></li>
+                      <li class="menu-item"><a href="https://www.nationallibrary.gov.in/" target="_blank">National Library</a></li>
+                      <li class="menu-item"><a href="https://scholarships.gov.in/" target="_blank">National Scholarship Portal</a></li>
+</ul>
+      </div>
+      <div class="col-lg-2 col-md-6">
+          <h5 class="text-white mb-3">St. Xavier's Campus</h5>
+          <ul class="list-unstyled text-muted">
+              <li class="menu-item"><a href="https://www.aactni.edu.in/departments/departments.php">Department</a></li>
+                      <li class="menu-item"><a href="https://www.aactni.edu.in/sports/sphome.php">Sports &amp; Games</a></li>
+                      <li class="menu-item"><a href="https://www.aactni.edu.in/lib/libhome.php">Library</a></li>
+                      <li class="menu-item"><a href="https://www.aactni.edu.in/epartV.php">Part-V</a></li>
+                      <li class="menu-item"><a href="https://www.aactni.edu.in/eextend.php">Extension</a></li>
+                      <li class="menu-item"><a href="https://www.aactni.edu.in/hostel/hompage.php">Hostel</a></li>
+                      <li class="menu-item"><a href="https://www.aactni.edu.in/ealumnicnt.php">Alumni</a></li>
+                      <li class="menu-item"><a href="https://www.aactni.edu.in/facilities.php">Infrastructures</a></li>
+                  
+          </ul>
+      </div>
+      <div class="col-lg-2 col-md-6">
+          <h5 class="text-white mb-3">Contact Us</h5>
+          <ul class="list-unstyled text-muted">
+              <li class="menu-item" id="mail"><a href="https://www.aactni.edu.in/departments/departments.php">Department</a></li>
+              <li class="menu-item"><a href="https://www.aactni.edu.in/#">OFFICE : 04549-287221 / 04549-287208</a></li>
+              <li class="menu-item"><a href="https://www.aactni.edu.in/#">PRINCIPAL : 9443698960 </a></li>
+            <!-- <li class="menu-item"><a href="#">IQAC : 9442003808</a></li>  -->
+             <li class="menu-item"><a href="https://www.aactni.edu.in/#">CONTROLLER OF EXAMINATIONS : 9442363332 </a></li>
+              <li class="menu-item"><a href="https://www.aactni.edu.in/#">FOR ADMISSION ENQUIRY : <br> 9384190524  <br> 9003398422<br> 9442128397</a></li>
+              
+          </ul>
+      </div>
+<div>
+<p class="small text-muted mb-0" style="text-align: center;">&copy; Copyrights. All rights reserved. <a class="text-primary" href="https://www.aactni.edu.in/">Maria Tellas A</p>
+</div>
+</footer>
+
+
+</div>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--Bootstrap Script Source-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    
+    
+    
+</body>
+</html>
